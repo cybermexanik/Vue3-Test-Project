@@ -12,6 +12,7 @@ const router = createRouter({
       path: '/',
       component: MainLayout,
       children: [
+        { path: '', redirect: 'sales' },
         { path: 'sales', component: SalesView },
         { path: 'orders', component: OrdersView },
         { path: 'stocks', component: StocksView },
